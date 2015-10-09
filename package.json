@@ -19,8 +19,5 @@
     "react-component",
     "android",
     "vibration"
-  ],
-  "peerDependencies": {
-    "react-native": ">=0.12.0 || 0.12.0-rc"
-  }
+  ]
 }
