@@ -14,8 +14,8 @@ npm i --save react-native-vibration
 
 ```gradle
 ...
-include ':vibration', ':app'
-project(':vibration').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vibration/android')
+include ':ReactNativeVibration', ':app'
+project(':ReactNativeVibration').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vibration/android')
 ```
 
 * In `android/app/build.gradle`
@@ -24,7 +24,7 @@ project(':vibration').projectDir = new File(rootProject.projectDir, '../node_mod
 ...
 dependencies {
     ...
-    compile project(':vibration')
+    compile project(':ReactNativeVibration')
 }
 ```
 
