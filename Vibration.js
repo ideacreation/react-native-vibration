@@ -1,15 +1,20 @@
 'use strict';
 
-var RNVibrationAndroid = require('NativeModules').VibrationAndroid;
+import { Platform } from 'react-native';
 
-var VibrationAndroid = {
+const Vibration = {
   vibrate(duration) {
-    if (duration === undefined) {
-      duration = 300;
+    if (Platform.OS === 'ios') {
+      const VibrationIOS = require('react-native').VibrationIOS;
+      VibrationIOS.vibrate();
+    } else {
+      const { NativeModules } = require('react-native');
+      if (duration === undefined) {
+        duration = 300;
+      }
+      NativeModules.VibrationAndroid.vibrate(duration);
     }
-
-    RNVibrationAndroid.vibrate(duration);
   }
 };
 
-module.exports = VibrationAndroid;
+module.exports = Vibration;

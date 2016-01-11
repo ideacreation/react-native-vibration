@@ -1,6 +1,6 @@
 # react-native-vibration
 
-Vibration support for android. Based on the pull request https://github.com/facebook/react-native/pull/2794 from @christopherdro.
+Vibration module with support for android, based on the pull request https://github.com/facebook/react-native/pull/2794 from @christopherdro. For iOS it wraps VibrationIOS. On iOS the duration can't be specified. If you don't specify a duration on Android 300ms will be used.
 
 ### Installation
 
