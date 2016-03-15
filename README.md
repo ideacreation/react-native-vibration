@@ -61,6 +61,11 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 }
 ```
 
+* allow vibration (in AndroidManifest.xml)
+```xml
+<uses-permission android:name="android.permission.VIBRATE" />
+```
+
 ## Example
 ```javascript
 'use strict';
